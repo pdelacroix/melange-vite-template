@@ -1,18 +1,28 @@
-# melange-opam-template
+# melange-vite-template
 
 A simple project template using [Melange](https://github.com/melange-re/melange)
-with [opam](https://opam.ocaml.org/).
+with [opam](https://opam.ocaml.org/) and [Vite](https://vitejs.dev/).
+
+If you are looking for a template with webpack, check [melange-opam-template](https://github.com/melange-re/melange-opam-template).
 
 If you are looking for a template with esy, check [melange-esy-template](https://github.com/melange-re/melange-esy-template).
+
+## Integration with Vite
+
+For informations about Vite integration and filing issues, see the [vite-plugin-melange repository](https://github.com/pdelacroix/vite-plugin-melange).
+
+## Possible improvements
+
+- Use [vite-node](https://www.npmjs.com/package/vite-node) for the Node part
+- SSR
+- Integration with [vitest](https://vitest.dev/)
 
 ## Quick Start
 
 ```shell
 npm run init
 
-# In separate terminals:
-npm run watch
-npm run serve
+npm run dev
 ```
 
 ### React
@@ -36,6 +46,8 @@ JavaScript dependencies
 - `npm run watch`: watch for the filesystem and have Melange rebuild on every
 change
 - `npm run serve`: serve the application with a local HTTP server
+- `npm run dev`: run a development server that watches for changes
+- `npm run bundle`: bundle a production build in the `dist/` directory
 
 ## JavaScript output
 
